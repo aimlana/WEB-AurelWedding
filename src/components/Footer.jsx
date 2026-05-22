@@ -143,7 +143,9 @@ const Footer = () => {
             <Mail size={20} />
           </a>
         </div>
-        <p className='copyright'>© 2026. All rights reserved</p>
+        <p className='copyright'>
+          © {new Date().getFullYear()} Aurel Wedding Gallery - All rights reserved.
+        </p>
       </div>
     </footer>
   );
