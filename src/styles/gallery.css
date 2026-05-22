@@ -1,0 +1,108 @@
+.gallery-page {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  padding: 140px 8% 80px;
+}
+
+.gallery-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menggunakan kembali style title dari services jika memungkinkan, 
+   tapi kita deklarasikan spesifik disini agar mandiri */
+.gallery-page .page-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color-charcoal);
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+/* --- MASONRY GRID SYSTEM --- */
+.masonry-grid {
+  /* 3 Kolom untuk Desktop */
+  column-count: 3;
+  column-gap: 20px;
+  width: 100%;
+}
+
+.masonry-item {
+  /* Mencegah gambar terpotong di antara kolom */
+  break-inside: avoid; 
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  
+  margin-bottom: 20px;
+  border-radius: 16px; /* Sesuai rounded corner di desain */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.6s ease;
+}
+
+/* Efek hover premium (Subtle zoom) */
+.masonry-item:hover .gallery-img {
+  transform: scale(1.03);
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.05); /* Sedikit penggelapan saat hover */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.masonry-item:hover .img-overlay {
+  opacity: 1;
+}
+
+/* Tombol Kunjungi Instagram */
+.gallery-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.gallery-action .btn-primary {
+  padding: 16px 40px;
+  font-size: 1.05rem;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+  .gallery-page {
+    padding: 120px 5% 60px;
+  }
+
+  .gallery-page .page-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .masonry-grid {
+    /* 2 Kolom untuk Mobile mengikuti desain */
+    column-count: 2;
+    column-gap: 12px;
+  }
+
+  .masonry-item {
+    margin-bottom: 12px;
+    border-radius: 12px;
+  }
+  
+  .gallery-img {
+    border-radius: 12px;
+  }
+}

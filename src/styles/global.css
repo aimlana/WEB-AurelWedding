@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&display=swap');
+
+:root {
+  /* Color Palette */
+  --color-cream: #FEF6F3;
+  --color-pink: #F38BBD;
+  --color-pink-hover: #E374A6;
+  --color-pink-light: #FCE8F0;
+  --color-charcoal: #2D2C2C;
+  --color-white: #FFFFFF;
+  --color-text-main: #333333;
+  
+  /* Typography */
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+  --font-signature: 'Great Vibes', cursive;
+  
+  /* Spacing System */
+  --section-padding-desktop: 100px 8%;
+  --section-padding-mobile: 60px 5%;
+  --border-radius-lg: 24px;
+  --border-radius-md: 16px;
+  --border-radius-pill: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-cream);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Elegant Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-pink);
+  border-radius: 10px;
+}
+
+/* Reusable Components */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 14px 32px;
+  border-radius: var(--border-radius-pill);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(243, 139, 189, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-pink-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 139, 189, 0.3);
+}
+
+.btn-outline {
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--color-pink);
+  padding: 14px 32px;
+  border-radius: var(--border-radius-pill);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.text-highlight {
+  color: var(--color-pink);
+  font-style: italic;
+}

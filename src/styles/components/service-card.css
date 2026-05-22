@@ -1,0 +1,70 @@
+.service-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-md);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.service-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 5px 5px 5px;
+}
+
+.card-text {
+  text-align: left; /* Memaksa teks label dan judul menjadi rata kiri */
+}
+
+.card-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-bottom: 2px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.card-price-box {
+  text-align: right;
+}
+
+.price-label {
+  color: var(--color-pink);
+}
+
+.card-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-pink);
+}

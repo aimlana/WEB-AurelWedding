@@ -1,0 +1,118 @@
+.services-page {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  padding: 140px 8% 80px; /* Padding atas lebih besar untuk space Navbar */
+}
+
+.services-content {
+  max-width: 1200px; /* Membatasi lebar agar text tidak terlalu panjang */
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color-charcoal);
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+/* Pricelist Container */
+.pricelist-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricelist-item-group {
+  padding: 1.8rem 0;
+  border-bottom: 2px solid rgba(70, 70, 70, 0.15); /* Garis pembatas tipis elegan */
+}
+
+.pricelist-item-group.no-border {
+  border-bottom: none;
+}
+
+/* Main Item (Title & Price) */
+.pricelist-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.mt-4 {
+  margin-top: 20px;
+}
+
+.item-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+}
+
+.item-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+}
+
+/* Addons / Sub-items */
+.pricelist-addons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.addon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px; /* Indentasi ke dalam */
+}
+
+.addon-text, .addon-price {
+  font-size: 1.3rem;
+  color: #888888; /* Warna abu-abu soft sesuai desain */
+  font-weight: 400;
+}
+
+.addon-symbol {
+  margin-right: 4px;
+}
+
+/* Button Action */
+.services-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.btn-download {
+  margin-top: 1.5rem;
+  padding: 16px 40px;
+  font-size: 1rem;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .services-page {
+    padding: 120px 5% 60px;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .item-title, .item-price {
+    font-size: 1.05rem;
+  }
+
+  .addon-text, .addon-price {
+    font-size: 0.9rem;
+  }
+
+  .addon-row {
+    padding-left: 10px;
+  }
+}
