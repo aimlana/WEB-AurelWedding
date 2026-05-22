@@ -63,7 +63,7 @@ const Footer = () => {
 
           <div className='footer-socials desktop-socials'>
             <a
-              href='https://www.instagram.com/aurelweddingallery'
+              href='https://www.instagram.com/rellmakeup'
               className='social-icon'
               target='_blank'
             >
@@ -119,13 +119,27 @@ const Footer = () => {
 
       <div className='footer-bottom'>
         <div className='footer-socials mobile-socials'>
-          <a href='#' className='social-icon'>
+          <a
+            href='https://www.instagram.com/rellmakeup'
+            className='social-icon'
+          >
             <InstagramIcon size={20} />
           </a>
-          <a href='#' className='social-icon'>
+          <a
+            href='https://www.tiktok.com/@aurelmakeupgallery'
+            className='social-icon'
+          >
+            <TiktokIcon size={20} />
+          </a>
+          <a
+            href={waLink}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='social-icon'
+          >
             <MessageCircle size={20} />
           </a>
-          <a href='#' className='social-icon'>
+          <a href='mailto:aurelbridal@gmail.com' className='social-icon'>
             <Mail size={20} />
           </a>
         </div>
