@@ -105,7 +105,7 @@ const Gallery = () => {
           transition={{ duration: 0.6 }}
         >
           <a
-            href='https://www.instagram.com/aurelweddingallery'
+            href='https://www.instagram.com/rellmakeup'
             className='btn-primary'
             target='_blank'
           >
