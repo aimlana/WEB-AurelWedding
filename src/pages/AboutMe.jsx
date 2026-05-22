@@ -111,9 +111,14 @@ Terima kasih :) `;
             </p>
 
             {/* Button Mobile: Muncul di paling bawah narasi pada mobile */}
-            <button className='btn-primary btn-reservasi mobile-only-btn'>
+            <a
+              href={waLink}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='btn-primary btn-reservasi mobile-only-btn'
+            >
               Reservasi Sekarang
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>
