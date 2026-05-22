@@ -98,7 +98,7 @@ Terima kasih :) `;
               untuk berbagai acara spesial.
             </p>
             <p className='about-p'>
-              Terinspirasi dari perjalanan itu, saya membangun ReliMakeup
+              Terinspirasi dari perjalanan itu, saya membangun RellMakeup
               sebagai layanan makeup professional yang menghadirkan sentuhan
               riasan yang elegan, personal, dan menyesuaikan karakter wajah
               setiap klien. Layanan tersedia untuk home service maupun makeup di
