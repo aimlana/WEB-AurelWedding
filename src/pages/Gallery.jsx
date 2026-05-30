@@ -2,59 +2,85 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import '../styles/gallery.css';
 
+import pict1 from '../assets/gal1.jpeg'
+import pict2 from '../assets/gal2.jpeg'
+import pict3 from '../assets/gal3.jpeg'
+import pict4 from '../assets/gal4.jpg'
+import pict5 from '../assets/gal5.jpeg'
+import pict6 from '../assets/gal6.jpeg'
+import pict7 from '../assets/gal7.jpg'
+import pict8 from '../assets/gal8.jpeg'
+import pict9 from '../assets/gal9.jpeg'
+import pict10 from '../assets/gal10.jpeg'
+import pict11 from '../assets/gal11.jpeg'
+import pict12 from '../assets/gal12.jpeg'
+
 const Gallery = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Dummy data gambar dengan orientasi campuran (Portrait, Landscape, Square)
-  // Ganti src ini dengan path gambar asli Anda nantinya (misal: import img1 from '../assets/img1.jpg')
   const galleryImages = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80',
+      src: pict1,
       alt: 'Makeup 1',
-    }, // Portrait tall
+    }, 
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80',
+      src: pict2,
       alt: 'Makeup 2',
-    }, // Landscape
+    }, 
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80',
+      src: pict3,
       alt: 'Makeup 3',
-    }, // Landscape
+    }, 
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600&q=80',
+      src: pict4,
       alt: 'Makeup 4',
-    }, // Portrait
+    }, 
     {
       id: 5,
-      src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80',
+      src: pict5,
       alt: 'Makeup 5',
-    }, // Landscape
+    }, 
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80',
+      src: pict6,
       alt: 'Makeup 6',
-    }, // Landscape
+    }, 
     {
       id: 7,
-      src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80',
+      src: pict7,
       alt: 'Makeup 7',
-    }, // Square
+    }, 
     {
       id: 8,
-      src: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80',
+      src: pict8,
       alt: 'Makeup 8',
-    }, // Portrait tall
+    }, 
     {
       id: 9,
-      src: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80',
+      src: pict9,
       alt: 'Makeup 9',
-    }, // Landscape
+    }, 
+    {
+      id: 10,
+      src: pict10,
+      alt: 'Makeup 10',
+    }, 
+    {
+      id: 11,
+      src: pict11,
+      alt: 'Makeup 11',
+    }, 
+    {
+      id: 12,
+      src: pict12,
+      alt: 'Makeup 12',
+    }, 
   ];
 
   return (

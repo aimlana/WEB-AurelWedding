@@ -2,9 +2,10 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import '../styles/about-me.css';
 
+import aboutPict from '../assets/profile-pict.jpeg'
+
 // Gambar model portrait
-const ABOUT_ME_IMG =
-  'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80';
+const ABOUT_ME_IMG = aboutPict;
 
 const AboutMe = () => {
   useEffect(() => {

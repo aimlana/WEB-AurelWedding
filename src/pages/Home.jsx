@@ -2,17 +2,18 @@ import { motion } from 'framer-motion';
 import ServiceCard from '../components/ServiceCard';
 import '../styles/home.css';
 
+import heroPict from '../assets/hero-img.jpeg'
+import aboutPict from '../assets/profile-pict.jpeg';
+import weddingPict from '../assets/gal11.jpeg';
+import wisudaPict from '../assets/gal7.jpg';
+import mapettuadaPict from '../assets/gal9.jpeg'
+
 // Placeholder untuk assets, ganti dengan import gambar Anda
-const HERO_IMG =
-  'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80';
-const ABOUT_IMG =
-  'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80';
-const SRV_1 =
-  'https://images.unsplash.com/photo-1595956553066-ae24a3c896f6?auto=format&fit=crop&w=600&q=80';
-const SRV_2 =
-  'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600&q=80';
-const SRV_3 =
-  'https://images.unsplash.com/photo-1620052328249-1667b36f60ce?auto=format&fit=crop&w=600&q=80';
+const HERO_IMG = heroPict;
+const ABOUT_IMG = aboutPict;
+const SRV_1 = weddingPict;
+const SRV_2 = wisudaPict;
+const SRV_3 = mapettuadaPict;
 
 const Home = () => {
   const fadeUpConfig = {

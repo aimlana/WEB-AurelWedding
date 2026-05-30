@@ -89,6 +89,12 @@ html {
   transition: all 0.3s ease;
 }
 
+.btn-outline:hover {
+  background-color: #fff6fa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 139, 189, 0.3);
+}
+
 .text-highlight {
   color: var(--color-pink);
   font-style: italic;
